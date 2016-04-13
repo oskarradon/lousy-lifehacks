@@ -15,13 +15,15 @@
     {{content-for "head-footer"}}
   </head>
   <body>
-    {{content-for "body"}}
+    <div class="container">
+      {{content-for "body"}}
 
-    <script type="text/javascript" charset="utf-8" src="https://www.youtube.com/iframe_api"></script>
+      <script type="text/javascript" charset="utf-8" src="https://www.youtube.com/iframe_api"></script>
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/crappy-lifehacks.js"></script>
+      <script src="assets/vendor.js"></script>
+      <script src="assets/crappy-lifehacks.js"></script>
 
-    {{content-for "body-footer"}}
+      {{content-for "body-footer"}}
+    </div>
   </body>
 </html>
