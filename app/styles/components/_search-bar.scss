@@ -1,10 +1,15 @@
 #search-bar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   button {
     color: white;
+    width: 33px;
+    height: 33px;
   }
   input {
     border: 2px solid $color-orange;
+    padding: 4px;
+    width: calc(100% - 33px);
   }
 }
