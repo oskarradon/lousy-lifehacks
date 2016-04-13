@@ -25,7 +25,12 @@ body {
 
 #search-form {
   padding: 10px;
+  margin: auto;
+  max-width: 800px;
   p {
     margin-top: 0px;
+    @media all and (min-width: $first-break) {
+      display: none;
+    }
   }
 }
