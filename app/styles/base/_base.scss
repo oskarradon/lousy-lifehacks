@@ -18,3 +18,20 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  background: #E6EBE0;
+}
+
+header {
+  a {
+    text-decoration: none;
+    font-size: 3em;
+  }
+  #upper {
+    color: #3F88C5;
+  }
+  #logo {
+    color: #E94F37;
+  }
+}
