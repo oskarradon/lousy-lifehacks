@@ -1,7 +1,9 @@
-<p>
-  Enter a search term below:
-</p>
-<form id="search-bar">
-  {{input value=query id="query"}}
-  <button {{action 'lookupForm'}}><i class="fa fa-search" aria-hidden="true"></i></button>
-</form>
+<div id="search-form">
+  <p>
+    Enter a search term below:
+  </p>
+  <form id="search-bar">
+    {{input value=query id="query" placeholder="Search for something..."}}
+    <button {{action 'lookupForm'}}><i class="fa fa-search" aria-hidden="true"></i></button>
+  </form>
+</div>
