@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
+// This file contains all application-wide Sass variables (except colors).
 // -----------------------------------------------------------------------------
-
-
 
 
 
@@ -14,24 +12,9 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-
-
-
-
-/// Copy text color
-
-
-
-
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -42,11 +25,6 @@ $breakpoints: (
   'medium': (min-width: 768px),
   'large': (min-width: 1024px),
 ) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

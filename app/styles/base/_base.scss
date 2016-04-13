@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: #E6EBE0;
+  background: $color-bg;
 }
 
 header {
@@ -29,9 +29,9 @@ header {
     font-size: 3em;
   }
   #upper {
-    color: #3F88C5;
+    color: $color-blue;
   }
   #logo {
-    color: #E94F37;
+    color: $color-orange;
   }
 }
