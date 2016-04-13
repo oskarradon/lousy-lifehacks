@@ -8,7 +8,7 @@ header {
     text-decoration: none;
     font-size: 2em;
     line-height: 1em;
-    @media all and (min-width: $tablet) {
+    @media all and (min-width: $first-break) {
       font-size: 3em;
     }
   }
@@ -20,5 +20,9 @@ header {
   }
   p {
     margin-bottom: 0px;
+    @media all and (min-width: $first-break) {
+      width: 500px;
+      font-size: 1.1em;
+    }
   }
 }
