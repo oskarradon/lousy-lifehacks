@@ -1,0 +1,15 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  font-family: "Monaco", monospace;
+}
+
+#logo {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  #upper {
+    font-weight: 300;
+  }
+}

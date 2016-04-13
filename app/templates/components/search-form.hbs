@@ -1,9 +1,9 @@
-<h3>Search LifeHack Videos</h3>
-
-<form>
-  <div class="form-group">
-      <label for="query">Query</label>
-      {{input value=query id="query"}}
-  </div>
-  <button {{action 'lookupForm'}}>Search</button>
-</form>
+<div id="search-form">
+  <p>
+    Enter a search term below:
+  </p>
+  <form id="search-bar">
+    {{input value=query id="query" placeholder="Search for something..."}}
+    <button {{action 'lookupForm'}}><i class="fa fa-search" aria-hidden="true"></i></button>
+  </form>
+</div>

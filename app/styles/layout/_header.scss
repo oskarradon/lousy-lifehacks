@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+  padding: 10px;
+  a {
+    text-decoration: none;
+    font-size: 2em;
+    line-height: 1em;
+    @media all and (min-width: $tablet) {
+      font-size: 3em;
+    }
+  }
+  #upper {
+    color: $color-blue;
+  }
+  #logo {
+    color: $color-orange;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+}
