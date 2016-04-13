@@ -1,8 +1,5 @@
-<!-- {{i-frame model=video iFrame="iFrame"}} -->
+{{search-form lookupForm="lookupForm"}}
 
 {{#each model as |video|}}
-<iframe id="player" type="text/html" width="640" height="390"
-  src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
-  frameborder="0"></iframe>
+  {{i-frame video=video}}
 {{/each}}
-<div id="player"></div>
