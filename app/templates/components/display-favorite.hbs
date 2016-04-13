@@ -1,0 +1,7 @@
+{{#each favorite.answerFavorites as |favoriteVideo|}}
+  <li>
+    <iframe id="player" type="text/html" width="640" height="390"
+      src="http://www.youtube.com/embed/{{favoriteVideo.id.videoId}}?enablejsapi=1"
+      frameborder="0"></iframe>
+  </li>
+{{/each}}
