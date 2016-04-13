@@ -22,3 +22,10 @@ html {
 body {
   background: $color-bg;
 }
+
+#search-form {
+  padding: 10px;
+  p {
+    margin-top: 0px;
+  }
+}
