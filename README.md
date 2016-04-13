@@ -1,10 +1,10 @@
 # Crappy Lifehacks
 
-##### By ???
+##### By Oskar Radon, Keir Staple, Andrew Telleria, and Trevor Elvey
 
 ### Description
 
-Crappy lifehacks is a simple Ember app where a user can search for How To and Lifehack videos for anything they might want to learn about. The app returns videos with low view counts, ensuring hilarious results.
+Crappy lifehacks is a simple Ember app where a user can search for How To and Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
 
 ## Installation
 
