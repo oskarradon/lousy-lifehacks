@@ -1,14 +1,14 @@
-# Crappy Lifehacks
+# Lousy Lifehacks
 
 ##### By Oskar Radon, Keir Staple, Andrew Telleria, and Trevor Elvey
 
 ### Description
 
-Crappy lifehacks is a simple Ember app where a user can search for How To and Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
+Lousy lifehacks is a simple Ember app where a user can search for How To and Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
 
 ## Installation
 
-* `git clone https://github.com/oskarradon/crappy-lifehacks.git` this repository
+* `git clone https://github.com/oskarradon/lousy-lifehacks.git` this repository
 *   change into the new directory
 * `npm install`
 * `bower install`
