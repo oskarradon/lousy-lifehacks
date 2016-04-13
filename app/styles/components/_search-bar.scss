@@ -19,11 +19,11 @@
     width: calc(100% - 33px);
     @media all and (min-width: $first-break) {
       padding: 10px;
+      text-align: center;
     }
     &::-webkit-input-placeholder {
       @media all and (min-width: $first-break) {
         font-size: 1.1em;
-        text-align: center;
         // line-height: 2em;
         margin: none;
       }
