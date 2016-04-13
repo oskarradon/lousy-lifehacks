@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 header {
+  padding: 10px;
   a {
     text-decoration: none;
     font-size: 2em;
@@ -16,5 +17,8 @@ header {
   }
   #logo {
     color: $color-orange;
+  }
+  p {
+    margin-bottom: 0px;
   }
 }
