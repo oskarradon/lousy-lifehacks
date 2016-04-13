@@ -1,0 +1,10 @@
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  button {
+    color: white;
+  }
+  input {
+    border: 2px solid $color-orange;
+  }
+}
