@@ -4,16 +4,15 @@
   src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1&showinfo=0"
   frameborder="0"></iframe>
 
-{{#if addedToFavorite}}
-<div class="buttons">
-  <button><i class="fa fa-star" aria-hidden="true"></i></button>
-</div>
-{{else}}
-<div class="buttons">
-  <button {{action 'addFavorite' video}}><i class="fa fa-star" aria-hidden="true"></i></button>
-</div>
-{{/if}}
-<div class="buttons">
-  <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-</div>
+  {{#if addedToFavorite}}
+  <div class="buttons">
+    <button><i class="fa fa-star clicked" aria-hidden="true"></i></button>
+    <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+  </div>
+  {{else}}
+  <div class="buttons">
+    <button {{action 'addFavorite' video}}><i class="fa fa-star" aria-hidden="true"></i></button>
+    <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+  </div>
+  {{/if}}
 </div>
