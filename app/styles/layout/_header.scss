@@ -12,14 +12,11 @@ header {
       font-size: 3em;
     }
   }
-  #upper {
-    color: $color-blue;
-  }
   #logo {
     color: $color-orange;
-    &:hover {
-      background: darken($color-bg, 20%);
-    }
+  }
+  #upper {
+    color: $color-blue;
   }
   p {
     margin-bottom: 0px;
