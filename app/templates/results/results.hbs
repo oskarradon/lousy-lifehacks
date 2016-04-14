@@ -1,11 +1,13 @@
 {{search-form lookupForm="lookupForm"}}
 
-
 <div class="results">
   {{#each model as |video|}}
-    {{i-frame video=video session=session addFavorite="addFavorite"}}
+    {{i-frame video=video}}
   {{/each}}
 </div>
 
+<hr>
 
-{{display-favorite}}
+<ul>
+  {{display-favorite}}
+</ul>

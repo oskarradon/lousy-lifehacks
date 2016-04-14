@@ -6,10 +6,13 @@ const { inject } = Ember;
 export default Ember.Component.extend({
   authenticate: Ember.inject.service('authenticate'),
   favoriteVideo: Ember.inject.service('favorite-video'),
+  addedToFavorite: false,
 
   actions: {
-    addFavorite(favoriteId) {
-      this.get('favoriteVideo').add(favoriteId);
+    addFavorite(favorite) {
+      console.log(this.get('favoriteVideo'));
+      this.get('favoriteVideo').add(favorite);
+      this.set('addedToFavorite', true);
     }
   }
 });

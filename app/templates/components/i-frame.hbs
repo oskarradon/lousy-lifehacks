@@ -1,13 +1,23 @@
-<iframe id="player" type="text/html" width="640" height="390"
-  src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
+<div class="result">
+  <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}</a>
+  <iframe id="player" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1&showinfo=0"
   frameborder="0"></iframe>
-  {{#if session.isAuthenticated}}
-    <button {{action 'addFavorite' video.id.videoId}}>Favorite</button>
+
+{{#if session.isAuthenticated}}
+  {{#if addedToFavorite}}
+    <div class="buttons">
+      <button><i class="fa fa-star clicked" aria-hidden="true"></i></button>
+      <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+    </div>
+  {{else}}
+    <div class="buttons">
+      <button {{action 'addFavorite' video}} alt="Add video to favorites"><i class="fa fa-star" aria-hidden="true"></i></button>
+      <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+    </div>
+  {{/if}}
+
   {{else}}
     Login to add to favorites
   {{/if}}
-
-  {{log session}}
-
-  <a class="twitter-share-button" data-hashtags="LousyLifehacks"
-  href="https://twitter.com/intent/tweet?text=This%20video%20rocked%20my%20world%20https://www.youtube.com/watch?v={{video.id.videoId}}">Tweet</a>
+</div>
