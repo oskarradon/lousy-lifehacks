@@ -8,5 +8,8 @@ export default Ember.Service.extend({
   },
   remove(favorite) {
     this.get('videoFavorites').pushObject(favorite);
+  },
+  include(favorite) {
+    return this.get('videoFavorites').includes(favorite);
   }
 });
