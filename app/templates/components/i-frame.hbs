@@ -3,5 +3,9 @@
   <iframe id="player" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
   frameborder="0"></iframe>
-  <button {{action 'addFavorite' video}}><i class="fa fa-star" aria-hidden="true"></i></button>
+
+  <div class="buttons">
+    <button {{action 'addFavorite' video}}><i class="fa fa-star" aria-hidden="true"></i></button>
+    <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+  </div>
 </div>
