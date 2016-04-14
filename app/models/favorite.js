@@ -3,5 +3,5 @@ import DS from 'ember-data';
 
 export default Model.extend({
   user: DS.belongsTo('user'),
-  id: DS.attr()
+  fid: DS.attr()
 });

@@ -3,7 +3,7 @@
   frameborder="0"></iframe>
 
   {{#if session.isAuthenticated}}
-  <button {{action 'addFavorite' video}}>Favorite</button>
+  <button {{action 'addFavorite' video session}}>Favorite</button>
   {{else}}
     Login to add to favorites
   {{/if}}

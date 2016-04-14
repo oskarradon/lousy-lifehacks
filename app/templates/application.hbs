@@ -2,6 +2,16 @@
   {{#link-to 'index'}}
   <span id="logo"><span id="upper">LOUSY</span><br>LIFEHACKS</span>
   {{/link-to}}
+  <nav>
+    {{#unless session.isAuthenticated}}
+      <a href="#" {{action 'login'}}>Login</a>
+    {{else}}
+      <a href="#" {{action 'logout'}}>Logout</a>
+      <a href='http://twitter.com/{{session.currentUser.username}}' target='_blank'>
+        <img src='{{session.currentUser.profileImageURL}}' height='30px' width='30px'/>
+      </a>
+    {{/unless}}
+  </nav>
   <p>
     Ever wondered what’s the fastest and most efficient way to do a simple task?<br>
     Well now you can find the absolute worst videos to instruct you!<br>
