@@ -6,14 +6,15 @@
 
 {{#if session.isAuthenticated}}
   {{#if addedToFavorite}}
+
     <div class="buttons">
       <button><i class="fa fa-star clicked" aria-hidden="true"></i></button>
-      <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+      <button hashtags="LousyLifehacks" href="https://twitter.com/intent/tweet?text=Just%20found%20this%20lousy%20lifehack%20https://www.youtube.com/watch?v={{video.id.videoId}}"><i class="fa fa-twitter" aria-hidden="true"></i></button>
     </div>
   {{else}}
     <div class="buttons">
       <button {{action 'addFavorite' video}} alt="Add video to favorites"><i class="fa fa-star" aria-hidden="true"></i></button>
-      <button type="button" name="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+      <button hashtags="LousyLifehacks" href="https://twitter.com/intent/tweet?text=Just%20found%20this%20lousy%20lifehack%20https://www.youtube.com/watch?v={{video.id.videoId}}"><i class="fa fa-twitter" aria-hidden="true"></i></button>
     </div>
   {{/if}}
 
