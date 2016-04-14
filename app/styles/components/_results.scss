@@ -7,10 +7,11 @@
     align-items: center;
     margin-top: 50px;
     .buttons {
+      align-self: flex-start;
       @extend .results;
       margin: 0 0 0 10px;
       button {
-        margin: 5px 0;
+        margin: 0 0 10px 0;
         color: white;
         font-size: 1.5em;
       }
