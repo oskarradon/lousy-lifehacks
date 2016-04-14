@@ -7,7 +7,7 @@
       <a href="#" {{action 'login'}}>Login</a>
     {{else}}
       <a href="#" {{action 'logout'}}>Logout</a>
-      <a href='http://twitter.com/{{session.currentUser.username}}' target='_blank'>
+      <a href='http://myaccount.google.com/' target='_blank'>
         <img src='{{session.currentUser.profileImageURL}}' height='30px' width='30px'/>
       </a>
     {{/unless}}
