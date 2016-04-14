@@ -1,0 +1,12 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .video {
+    display: flex;
+    align-items: center;
+    button {
+      color: white;
+    }
+  }
+}

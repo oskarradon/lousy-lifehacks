@@ -1,4 +1,7 @@
-<iframe id="player" type="text/html" width="640" height="390"
+<div class="video">
+
+  <iframe id="player" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
   frameborder="0"></iframe>
-  <button {{action 'addFavorite' video}}>Favorite</button>
+  <button {{action 'addFavorite' video}}><i class="fa fa-star" aria-hidden="true"></i></button>
+</div>

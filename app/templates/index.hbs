@@ -1,5 +1,7 @@
 {{search-form lookupForm="lookupForm"}}
 
-{{#each model as |video|}}
+<div class="results">
+  {{#each model as |video|}}
   {{i-frame video=video}}
-{{/each}}
+  {{/each}}
+</div>
