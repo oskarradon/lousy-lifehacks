@@ -1,9 +1,12 @@
 <iframe id="player" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
   frameborder="0"></iframe>
+
+  {{#if session.isAuthenticated}}
   <button {{action 'addFavorite' video}}>Favorite</button>
+  {{else}}
+    Login to add to favorites
+  {{/if}}
+
   <a class="twitter-share-button" data-hashtags="LousyLifehacks"
   href="https://twitter.com/intent/tweet?text=This%20video%20rocked%20my%20world%20https://www.youtube.com/watch?v={{video.id.videoId}}">Tweet</a>
-
-
-  
