@@ -5,5 +5,5 @@ export default Model.extend({
   uid: DS.attr(),
   username: DS.attr(),
   avatar: DS.attr(),
-  favorites: DS.hasMany('favorite')
+  favorites: DS.hasMany('favorite', {async: true})
 });
