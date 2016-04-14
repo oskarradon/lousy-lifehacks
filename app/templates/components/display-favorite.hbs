@@ -1,8 +1,9 @@
 <div id="favorites">
   {{#each favoriteVideo.videoFavorites as |favorite|}}
-  <div class="favorite-video">
+  <div class="favorite">
+    <a href="https://www.youtube.com/watch?v={{favorite.id.videoId}}">{{favorite.snippet.title}}</a>
     <iframe id="player" type="text/html" width="640" height="390"
-    src="http://www.youtube.com/embed/{{favorite.id.videoId}}?enablejsapi=1"
+    src="http://www.youtube.com/embed/{{favorite.id.videoId}}?enablejsapi=1&showinfo=0"
     frameborder="0"></iframe>
   </div>
   {{/each}}
