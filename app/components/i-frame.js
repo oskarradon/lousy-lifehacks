@@ -8,9 +8,16 @@ export default Ember.Component.extend({
   favoriteVideo: Ember.inject.service('favorite-video'),
 
   actions: {
-    addFavorite(favorite) {
-      console.log(this.get('favoriteVideo'));
-      this.get('favoriteVideo').add(favorite);
+    addFavorite(favoriteId) {
+      console.log(favoriteId);
+      let sessionName = get(this, 'session.currentUser.username');
+      // var params = {
+      //   user: this.get('user');
+      //   fid: this.get('session.currentUser.username');
+      // }
+      console.log(sessionName);
+      this.get('favoriteVideo').add(favoriteId);
+      this.sendAction('addFavorite', sessionName, favoriteId);
     }
   }
 });

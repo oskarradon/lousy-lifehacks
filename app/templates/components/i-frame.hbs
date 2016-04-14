@@ -2,7 +2,7 @@
   src="http://www.youtube.com/embed/{{video.id.videoId}}?enablejsapi=1"
   frameborder="0"></iframe>
   {{#if session.isAuthenticated}}
-    <button {{action 'addFavorite' video session}}>Favorite</button>
+    <button {{action 'addFavorite' video.id.videoId}}>Favorite</button>
   {{else}}
     Login to add to favorites
   {{/if}}

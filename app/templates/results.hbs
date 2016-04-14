@@ -1,13 +1,7 @@
-{{#if session.isAuthenticated}}
-yayaya
-{{else}}
-nononono
-{{/if}}
-
 {{search-form lookupForm="lookupForm"}}
 
 {{#each model as |video|}}
-  {{i-frame video=video session=session}}
+  {{i-frame video=video session=session addFavorite="addFavorite"}}
 {{/each}}
 
 <hr>

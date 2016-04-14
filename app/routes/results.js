@@ -16,5 +16,9 @@ export default Ember.Route.extend({
     lookupForm(params) {
       this.transitionTo('results', params.query);
     },
+    addFavorite(sessionName){
+
+      this.createRecord
+    }
   }
 });
