@@ -17,6 +17,9 @@ header {
   }
   #logo {
     color: $color-orange;
+    &:hover {
+      background: darken($color-bg, 20%);
+    }
   }
   p {
     margin-bottom: 0px;
