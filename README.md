@@ -25,7 +25,6 @@ Lousy lifehacks is a simple Ember app where a user can search for How To and Lif
 * HTML
 * SCSS
 * Git
-* Google Fonts
 
 ##### License
 
