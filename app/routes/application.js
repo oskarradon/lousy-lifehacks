@@ -2,6 +2,7 @@ import Ember from 'ember';
 const {get} = Ember;
 
 export default Ember.Route.extend({
+  // authenticate: Ember.inject.service('authenticate'),
   beforeModel(){
     return get(this, 'session').fetch().catch(function(){});
   },
