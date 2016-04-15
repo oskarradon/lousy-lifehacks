@@ -5,7 +5,9 @@
       <span id="logo"><span id="upper">LOUSY</span><br>LIFEHACKS</span>
       {{/link-to}}
       {{#unless session.isAuthenticated}}
+      <div class="user">
         <a href="#" {{action 'login'}}>Login</a>
+      </div>
       {{else}}
       <div class="user">
         <a href="#" {{action 'logout'}}>Logout as<br>{{session.currentUser.displayName}}</a>

@@ -41,6 +41,12 @@ nav {
   .user {
     display: flex;
     align-items: center;
+    a {
+      font-size: 1em;
+      @media all and (min-width: 600px) {
+        font-size: 1.2em;
+      }
+    }
     img {
       height: 50px;
       margin-left: 30px;

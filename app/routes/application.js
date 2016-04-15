@@ -17,8 +17,8 @@ export default Ember.Route.extend({
     },
     logout(){
       get(this, 'session').close();
-      // this.transitionTo('index');
-      // window.location.reload(true);
+      this.transitionTo('index');
+      window.location.reload(true);
     }
   }
 });
