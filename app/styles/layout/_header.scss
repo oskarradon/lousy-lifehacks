@@ -4,25 +4,46 @@
 
 header {
   padding: 10px;
+  p {
+    margin-bottom: 0px;
+    @media all and (min-width: $first-break) {
+      width: 500px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   a {
     text-decoration: none;
-    font-size: 2em;
-    line-height: 1em;
     @media all and (min-width: $first-break) {
       font-size: 3em;
     }
   }
   #logo {
     color: $color-orange;
+    font-size: 2em;
+    line-height: 1em;
   }
   #upper {
     color: $color-blue;
   }
-  p {
-    margin-bottom: 0px;
-    @media all and (min-width: $first-break) {
-      width: 500px;
-      font-size: 1.1em;
+  a {
+    color: $color-blue;
+    font-size: 1.6em;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    img {
+      height: 50px;
+      margin-left: 30px;
     }
   }
 }
