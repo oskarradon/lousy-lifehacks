@@ -36,6 +36,13 @@
       @media all and (min-width: $first-break) {
         // align-self: flex-start;
       }
+      p {
+        font-family: 'Helvetica Neue', sans-serif;
+        // line-height: .5em;
+        margin: 5px 0;
+        font-weight: 500;
+        font-size: 1.2em;
+      }
       button {
         color: white;
         margin: 0 0 10px 10px;
