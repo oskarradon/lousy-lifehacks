@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px;
+  @media all and (min-width: $first-break) {
+    padding: none;
+  }
   .result {
     display: flex;
     margin-top: 30px;
@@ -18,7 +22,7 @@
       font-weight: bold;
       margin: 20px 0 3px;
       // -o-text-overflow: ellipsis;
-      @media all and (min-width: $first-break) {
+      @media all and (min-width: 650px) {
         margin: 0 0 3px;
       }
     }
