@@ -16,8 +16,11 @@
       color: black;
       text-decoration: none;
       font-weight: bold;
-      margin-bottom: 3px;
+      margin: 20px 0 3px;
       // -o-text-overflow: ellipsis;
+      @media all and (min-width: $first-break) {
+        margin: 0 0 3px;
+      }
     }
     iframe {
       max-width: 100%;
@@ -37,11 +40,15 @@
         // align-self: flex-start;
       }
       p {
+        display: none;
         font-family: 'Helvetica Neue', sans-serif;
         // line-height: .5em;
         margin: 5px 0;
         font-weight: 500;
         font-size: 1.1em;
+        @media all and (min-width: 650px) {
+          display: block;
+        }
       }
       button {
         color: white;
