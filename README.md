@@ -4,7 +4,7 @@
 
 ### Description
 
-Lousy lifehacks is a simple Ember app where a user can search for How To and Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
+Lousy lifehacks is a simple Ember app where a user can search for Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
 
 ## Installation
 
