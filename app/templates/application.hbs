@@ -8,7 +8,7 @@
         <a href="#" {{action 'login'}}>Login</a>
       {{else}}
       <div class="user">
-        <a href="#" {{action 'logout'}}>Logout as {{session.currentUser.displayName}}</a>
+        <a href="#" {{action 'logout'}}>Logout as<br>{{session.currentUser.displayName}}</a>
         <a href='http://myaccount.google.com/' target='_blank'>
           <img src='{{session.currentUser.profileImageURL}}'/>
         </a>
