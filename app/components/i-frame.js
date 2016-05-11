@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const {get} = Ember;
+const { get } = Ember;
 const { inject } = Ember;
 
 export default Ember.Component.extend({
@@ -10,7 +10,6 @@ export default Ember.Component.extend({
 
   actions: {
     addFavorite(favorite) {
-      console.log(this.get('favoriteVideo'));
       this.get('favoriteVideo').add(favorite);
       this.set('addedToFavorite', true);
     }

@@ -12,7 +12,6 @@ export default Ember.Route.extend({
       } else {
         return responseJSON.items;
       }
-
     });
   },
 
