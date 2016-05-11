@@ -4,7 +4,7 @@
 
 ### Description
 
-Lousy lifehacks is a simple Ember app where a user can search for Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results.
+Lousy lifehacks is a simple Ember app where a user can search for Lifehack videos for anything they might want to learn about. The app returns videos with low view counts (by searching for most recently uploaded), ensuring hilarious results. View a live version of the app [here](http://oskarradon.github.io/lousy-lifehacks).
 
 ## Installation
 
@@ -14,6 +14,7 @@ Lousy lifehacks is a simple Ember app where a user can search for Lifehack video
 * `bower install`
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+* OR just [click here](http://oskarradon.github.io/lousy-lifehacks)!
 
 ### Technologies Used
 
